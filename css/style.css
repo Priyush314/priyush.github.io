@@ -1,0 +1,1086 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font1: 'Raleway', sans-serif;
+    --font2: 'Poppins', sans-serif;
+    --font3: 'Andika New Basic', sans-serif
+}
+.nav-top{
+    width: 100%;
+    margin: auto;
+    height: 175px;
+    background: #dedede;
+}
+
+/* .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+.closeMenu{
+    display: none;
+    cursor: pointer;
+} */
+
+.logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 517px;
+    cursor: pointer;
+}
+.center{
+    width: 100%;
+    margin: auto;
+    height: 175px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    font-family: var(--font3);
+    font-size: 15px;
+}
+.btn-con{
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    background: white;
+}
+.btn-con button{
+    background: orangered;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid orangered;
+    outline: none;
+    width: 150px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.btn-con button:hover{
+    background: white;
+    border: 2px solid orangered;
+    color: orangered;
+    font-weight: bolder;
+    transition: .3s ease-in-out;
+}
+.menu{
+    width: 80vw;
+    background: orangered;
+    height: 60px;
+    margin: auto;
+    color: white;
+    display: flex;
+}
+.dropdwn{
+    width: 100%;
+    margin: auto;
+    position: sticky;
+    top: 0;
+}
+nav{
+    height: 50px;
+    width: 80vw;
+    margin: auto;
+	background: orangered;
+}
+nav ul {
+	padding: 0;
+    margin: 0;
+    width: 81vw;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+	background: orangered;
+	position: relative;
+    list-style: none;
+    font-family: var(--font3);
+    display: inline-block;
+    text-transform: uppercase;
+}
+nav ul li a{
+	display: block;
+	padding: 0 16px;
+	color: white;
+    text-decoration: none;
+    font-weight: bolder;
+	line-height: 50px;
+    font-size: 15px;
+    
+}
+nav ul li a:hover{
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+nav ul ul{
+	position: absolute;
+	top: 50px;
+	display: none;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+nav ul ul li {
+	width: 170px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+nav ul ul ul li{
+	position: relative;
+	top: -60px;
+	left:  150px;
+}
+body{
+    background: #dedede;
+}
+
+.center{
+    background: white;
+}
+main{
+    width: 100%;
+    min-height: calc(100vh - 50px - 58px);
+}
+
+.slider{
+    background: url('../images/slide-1.jpg');
+     width: 80vw;
+     height: 430px;
+     margin: auto;
+     background-size: center;
+     animation: slider 20s infinite linear;
+ }
+ 
+ @keyframes slider{
+     20%{
+         background: url('../images/slide-12.jpg');
+ }
+     35%{
+         background: url('../images/slide-3.jpg');
+ }
+     70%{
+         background: url('../images/slide-5.jpg');
+ }
+ }
+ #content{
+     width: 80vw;
+     margin: auto;
+ }
+ .content1{
+     margin: auto;
+     display: flex;
+ }
+ .online-work{
+     margin-top: 20px;
+     border: 2px solid white;
+     width: 25%;
+ }
+ .online-work h1{
+    width: 100%;
+    background: orangered;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--font3);
+    font-size: 16px;
+ }
+ .online-work img{
+    width: 100%;
+ }
+ .productions{
+    width: 470px;
+    margin-top: 20px;
+    margin-left: 25px;
+    border: 2px solid white;
+    height: 250px;
+ }
+ .productions h1{
+    background: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font3);
+    font-size: 16px;
+    color: white;
+    background: orangered;
+    height: 30px;
+ }
+.img img{
+    padding: 0 7px;
+    cursor: pointer;
+    width: 135px;
+}
+.img{
+    margin-top: 10px;
+   display: flex;
+   justify-content: space-evenly;
+}
+.img1{
+    position: relative;
+    top: 10px;
+}
+.video{
+    width: 301px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.video iframe{
+    border: 2px solid white;
+}
+.content2{
+    display: flex;
+    margin-top: 40px;
+}
+.img2{
+    width: 273px;
+}
+.ans{
+    border: 2px solid white;
+   margin-left: 30px;
+    cursor: pointer;
+}
+.ans h1{
+    width: 473px;
+    background: orangered;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font3);
+}
+.ans p{
+    font-family: var(--font3);
+    text-align: justify;
+    width: 430px;
+    font-size: 15px;
+    padding-top: 10px;
+    margin: auto;
+}
+.recruit-news{
+    border: 2px solid white;
+    margin-left: 15px;
+    width: 25%;
+    cursor: pointer;
+}
+.recruit-news p{
+    width: 100%;
+    background: orangered;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-family: var(--font3);
+}
+.recruit-news li{
+    font-family: var(--font3);
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.content3{
+    margin-top: 30px;
+    display: flex;
+}
+.news{
+    border: 2px solid white;
+    width: 25%;
+    height: 210px;
+    cursor: pointer;
+}
+.news h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font3);
+    color: white;
+    background: orangered;
+    font-size: 16px;
+    height: 30px;
+}
+.news p{
+    font-family: var(--font3);
+    font-size: 15px;
+    width: 241px;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+}
+.tender{
+    width: 47%;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.tender p{
+    width: 100%;
+    height: 30px;
+    background: orangered;
+    color: white;
+    font-weight: bolder;
+    font-family: var(--font3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+.tender marquee{
+    font-family: var(--font3);
+    height: 173px;
+}
+.theater p{
+    width: 100%;
+    background: orangered;
+    height: 30px;
+    color: white;
+    font-family: var(--font3);
+    display: flex;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.theater{
+    margin-left: 20px;
+    cursor: pointer;
+    width: 25%;
+}
+.theater marquee{
+    height: 175px;
+}
+footer{
+    padding: 20px;
+    background: #262F36;
+    color: #C9C9C9;
+    text-align: center;
+    font-family: var(--font2); 
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+#about{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    margin-top: 50px;
+    margin: auto;
+    background: #2c353cf6;
+    color: #C9C9C9;
+}
+.about{
+    width: 45%;
+    border: 2px solid #C9C9C9;
+    border-radius: 10px;
+    margin: 40px;
+    cursor: pointer;
+}
+.about h2{
+    font-family: var(--font3);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.about p{
+    font-family: var(--font3);
+    text-align: justify;
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: 80%;
+    margin: auto;
+}
+.about a{
+    text-decoration: underline;
+    color: white;
+}
+.about a:hover{
+    color: red;
+}
+.contact{
+    width: 45%;
+    border: 2px solid #C9C9C9;
+    border-radius: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.contact h1{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font3);
+    font-size: 24px;
+    text-decoration: underline;
+    /* padding-bottom: 10px; */
+}
+.details{
+    width: 80%;
+    text-align: center;
+    height: 200px;
+    font-family: var(--font3);
+    margin: auto;
+}
+#p1{
+    font-size: 21px;
+}
+#p2{
+    font-size: 15px;
+}
+#p3{
+    font-size: 20px;
+}
+#p4{
+    font-size: 15px;
+}
+nav ul li a .active{
+    background: #eb5310;
+}
+@media (min-width: 1450px){
+    .online-work h1{
+        width: 100%;
+    }
+    .online-work img{
+        width: 100%;
+    }
+    .video{
+        width: 30%;
+    }
+    .productions{
+        height: 270px;
+    }
+    .img2{
+        width: 25.5%;
+        position: relative;
+    }
+    .recruit-news{
+        width: 29.5%;
+    }
+    .recruit-news p{
+        width: 100%;
+    }
+    .recruit-news li{
+        width: 80%;
+        text-align: justify;
+    }
+    .news {
+        width: 48%;
+    }
+    .theater p{
+        width: 100%;
+    }
+}
+@media (min-width: 1900px){
+    .online-work{
+        width: 30%;
+    }
+    .online-work h1{
+        height: 40px;
+        font-size: 22px;
+    }
+    .productions{
+        width: 37%;
+    }
+    .productions h1{
+        height: 40px;
+        font-size: 22px;
+    } 
+    .img2{
+        width: 30%;
+    }
+    .ans{
+        width: 37%;
+    }
+    .ans h1{
+        width: 100%;
+        height: 40px;
+        font-size: 22px;
+    }
+    .ans p{
+        font-size: 20px;
+        width: 90%;
+    }
+    .recruit-news p{
+        height: 40px;
+        font-size: 22px;
+    }
+    .recruit-news li{
+        font-size: 20px;
+    }
+    .news h3{
+        height: 40px;
+        font-size: 22px;
+    }
+    .news p{
+        font-size: 20px;
+        width: 90%;
+        text-align: justify;
+    }
+    .news{
+        width: 40%
+    }
+    .tender{
+        width: 55%;
+    }
+    .tender marquee{
+        width: 96%;
+    }
+    .theater{
+        width: 43%;
+    }
+    .tender p{
+        width: 100%;
+    }
+}
+@media(max-width: 1330px){
+    nav ul li a{
+        font-size: 14px;
+    }
+}
+@media (max-width: 1200px){
+    nav ul li a{
+        font-size: 12px;
+    }
+    .online-work{
+        height: 200px;
+    }
+    .img2{
+        width: 200px;
+    }
+    .ans{
+        width: 48%;
+    }
+    .ans h1{
+        width: 100%;
+    }
+    .ans p{
+        width: 90%;
+    }
+    .news{
+        width: 20.5%;
+    }
+    .news p{
+        width: 90%;
+    }
+    .tender p{
+        width: 100%;
+    }
+    .theater{
+        width: 28%;
+    }
+    .theater p{
+        width: 100%;
+    }
+    .tender{
+        width: 28%;
+    }
+}
+@media (max-width: 1140px){
+    nav ul li a{
+        font-size: 11px;
+    }
+    .online-work{
+        width: 28%;
+    }
+    .online-work h1{
+        font-size: 13px;
+    }
+    .productions h1{
+        font-size: 13px;
+    }
+    .ans h1{
+        font-size: 13px;
+    }
+    .recruit-news p{
+        font-size: 13px;
+    }
+    .news h3{
+        
+        font-size: 13px;
+    }
+    .tender p{
+        font-size: 13px;
+    }
+    .theater p{
+        font-size: 13px;
+    }
+    .about h2{
+        font-size: 15px;
+    }
+    .about p{
+        font-size: 12px;
+    }
+    .logo{
+        width: 50%;
+    }
+}
+@media (max-width: 1024px){
+    .logo img{
+        width: 415px;
+    }
+    .email h1{
+        font-size: 22px;
+    }
+    .email p{
+        font-size: 15px;
+    }
+    .btn-con button{
+        font-size: 15px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .productions{
+        width: 47%;
+        height: 190px;
+    }
+    .productions h1{
+        font-size: 10px;
+        height: 20px;
+    }
+    .online-work{
+        height: 190px;
+    }
+    .online-work h1{
+        font-size: 10px;
+        height: 20px;
+    }
+    .img img{
+        width: 100px;
+    }
+    .video{
+        margin-left: 20px;
+    }
+    .img2{
+        width: 23%;
+    }
+    .ans{
+        margin-left: 15px;
+        width: 48%;
+    }
+    .ans h1{
+        font-size: 10px;
+        height: 20px;
+    }
+    .ans p{
+        font-size: 10px;
+    }
+    .recruit-news p{
+        font-size: 10px;
+        height: 20px;
+    }
+    .recruit-news li{
+        font-size: 10px;
+    }
+    .news{
+        width: 25%;
+        height: 150px;
+    }
+    .news h3{
+        font-size: 10px;
+        height: 20px;
+    }
+    .news p{
+        font-size: 10px;
+    }
+    .tender{
+        height: 150px;
+        width: 50%;
+    }
+    .tender marquee{
+        height: 115px;
+        font-size: 10px;
+    }
+    .tender p{
+        font-size: 10px;
+        height: 20px;
+    }
+    .theater{
+        height: 150px;
+        width: 25%;
+    }
+    .theater marquee{
+        height: 115px;
+        font-size: 10px;
+    }
+    .theater p{
+        font-size: 10px;
+        height: 20px;
+    }
+    footer{
+        font-size: 13px;
+    }
+}
+@media (max-width: 1271px){
+    nav ul li a{
+        font-size: 13px;
+    }
+}
+@media (max-width: 1205px){
+    nav ul li a{
+        font-size: 11px;
+    }
+}
+@media (max-width: 1071px){
+    nav ul li a{
+        font-size: 10px;
+    }
+    .online-work{
+        width: 25%;
+        height: 190px;
+    }
+    .online-work h1{
+        font-size: 11px;
+        height: 20px;
+    }
+    .productions{
+        width: 48%;
+        height: 190px;
+    }
+    .img img{
+        width: 100px;
+    }
+    .video{
+        width: 25%;
+        margin-left: 15px;
+    }
+    .ans p{
+        font-size: 14px;
+    }
+    .recruit-news li{
+        font-size: 11px;
+    }
+    .news {
+        width: 25%;
+        height: 180px;
+    }
+    .news p{
+        font-size: 13px;
+    }
+    .tender{
+        width: 50%;
+        height: 180px;
+    }
+    .tender marquee{
+        height: 145px;
+        font-size: 13px;
+    }
+    .theater marquee{
+        height: 145px;
+    }
+    footer{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1010px){
+    nav ul li a{
+        font-size: 9px;
+    }
+    nav {
+        height: 35px;
+    }
+    nav ul {
+        height: 35px;
+    }
+    nav ul li {
+        height: 35px;
+    }
+    nav ul li a{
+        height: 35px;
+        display: flex;
+        align-items: center;
+    }
+    .ans p{
+        font-size: 12px;
+    }
+}
+@media (max-width: 930px){
+    nav ul li a{
+        font-size: 8px;
+    }
+}
+@media (max-width: 900px){
+    .logo{
+        width: 50%;
+    }
+    .logo img{width: 83%}
+    .email{
+        width: 25%;
+    }
+    .email h1{
+        font-size: 21px;
+    }
+    .email p{
+        font-size: 15px;
+    }
+    .btn-con{
+        width: 25%;
+    }
+    .btn-con button{
+        width: 50%;
+        height: 40px;
+        font-size: 15px;
+    }
+    nav ul li a{
+        font-size: 8px;
+    }
+    nav ul{
+        height: 40px;
+    }
+    nav ul li {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav {
+        height: 40px;
+    }
+    .online-work{
+        width: 35%;
+        height: 180px;
+    }
+    .online-work h1{
+        font-size: 10px;
+        height: 20px;
+    }
+    .productions{
+        width: 50%;
+        height: 180px;
+    }
+    .productions h1{
+        font-size: 10px;
+        height: 20px;
+    }
+    .img img{
+        width: 90px;
+    }
+    .video{
+        margin-left: 20px;
+        height: 180px;
+    }
+    /* media query Content 2 */
+    .img2{
+        width: 25%;
+        height: 120px;
+    }
+    .ans h1{
+        font-size: 10px;
+        height: 20px;
+    }
+    .ans p{
+        font-size: 10px;
+    }
+    .recruit-news p{
+        height: 20px;
+        font-size: 10px;
+    }
+    .recruit-news li{
+        font-size: 10px;
+    }
+    .ans {
+        width: 43%;
+    }
+    .news{
+        width: 25%;
+        height: 150px;
+    }
+    .news h3{
+        font-size: 10px;
+        height: 20px;
+    }
+    .news p{
+        font-size: 10px;
+    }
+    .tender{
+        width: 47%;
+        height: 150px;
+    }
+    .tender p{
+        font-size: 10px;
+        height: 20px;
+    }
+    .tender marquee{
+        height: 83%;
+        font-size: 10px;
+    }
+    .theater p{
+        font-size: 10px;
+        height: 20px;
+    }
+    .theater marquee{
+        height: 125px;
+    }
+    #about{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .about{
+        margin: 0;
+        height: 75%;
+    }
+    .about p{
+        font-size: 10px;
+    }
+    .contact{
+        margin: 0;
+        height: 75%;
+    }
+    .contact h1{
+        font-size: 20px;
+    }
+    footer{
+        font-size: 13px;
+    }
+}
+@media (max-width: 878px){
+    nav ul li a{
+        font-size: 7px;
+    }
+    nav{
+        height: 35px;
+    }
+    nav ul{
+        height: 35px;
+    }
+    nav ul li{
+        height: 35px;
+    }
+    nav ul li a{
+        height: 35px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width: 813px){
+    nav ul li a{
+        font-size: 6px;
+    }
+}
+@media (max-width: 480px){
+    .nav-top{
+        height: 320px;
+        width: 1210px;
+    }
+    .center{
+        /* flex-direction: column; */
+        height: 320px;
+        width: 1210px; 
+    }
+    .logo{
+        width: 100%;
+        height: 90px;
+    }
+    .logo img{
+        width: 520px;
+    }
+    .email{
+        width: 100%;
+        /* height: 100px; */
+    }
+    .email h1{
+        font-size: 40px;
+    }
+    .email p{
+        font-size: 20px;
+    }
+    .btn-con{
+        width: 100%;
+    }
+    .btn-con button{
+        width: 155px;
+        height: 59px;
+        font-size: 18px;
+    }
+    .dropdwn{
+        width: 1210px;
+    }
+    nav{
+        width: 1012px;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul{
+        width: 100%;
+    }
+    nav ul li a{
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slider{
+        width: 1013px;
+        margin-left: 98px;
+    }
+    #content{
+        width: 1013px;
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content1{
+        margin: auto;
+    }
+    .productions{
+        width: 600px;
+    }
+    footer{
+        width: 1170px;
+        font-size: 16px;
+    }
+    .online-work{
+        width: 30%;
+    }
+    .online-work img{
+        width: 100%;
+        height: 180px;
+    }
+    .ans{
+        width: 493px;
+        margin-left: 20px;
+    }
+    .img2{
+        width: 253px;
+    }
+    main{
+        min-height: 100vh - 35px - 58px;
+    }
+}

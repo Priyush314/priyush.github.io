@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 1100px;
+}
+#history{
+    width: 100%;
+    height: 760px;
+}
+.para{
+    width: 80%;
+    margin: auto;
+}
+.para h1{
+    text-align: center;
+    padding-top: 40px;
+    font-family: var(--font3);
+    font-size: 30px;
+}
+.para p{
+    padding-top: 30px;
+    text-align: justify;
+    width: 90%;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-family: var(--font3);
+    margin: auto;
+}
+@media (max-width: 480px){
+    #history{
+        width: 1000px;
+        margin: auto;
+    }
+    .para{
+        margin: auto;
+        width: 90%;
+    }
+    main{
+        min-height: calc(100vh - 60px - 50px);
+    }
+}

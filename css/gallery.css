@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#gallery{
+    width: 77%;
+    margin: auto;
+}
+#gallery h1{
+    font-family: var(--font3);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+}
+.gallery-1{
+    justify-content: center;
+    margin-top: 50px;
+}
+.gallery-1 img{
+    width: 250px;
+    padding-left: 20px;
+}
+.gallery-1 img:hover{
+    transform: scale(1.1);
+    transition: 0.6s ease-in-out;
+}
+.btn button{
+    background: orangered;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid orangered;
+    outline: none;
+    width: 195px;
+    cursor: pointer;
+    height: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.btn button:hover{
+    border: 2px solid orangered;
+    color: orangered;
+    transition: 0.6s ease-in-out;
+    background: #dedede;
+    text-align: center;
+}
+.card{
+    margin-top: 50px;
+    display: flex;
+}
+.btn{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.video-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-1 iframe{
+    margin: 15px;
+}
+
+        /* CSS For audio gallery */
+
+.player{
+    width: 340px;
+    background: #fffde7;
+    height: 412px;
+    box-shadow: 0 10px 50px rgb(0 0 0 / 25%);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.player .imgBx{
+    width: 80%;
+    height: 265px;
+}
+.player .imgBx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    border-radius: 50%;
+}
+.player audio{
+    width: 90%;
+    outline: none;
+    margin-top: 20px;
+}
+
+.audio-gal {
+    margin-top: 30px;
+    height: 700px;
+}
+.ausio-gal h1{
+    font-family: var(--font3);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+}
+.player:hover{
+    margin-top: -13px;
+    box-shadow:  10px 10px  8px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+/* CSS of audio allery end here */
+
+@media (max-width: 480px){
+    #gallery{
+        width: 1210px;
+    }
+    .photo{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+    }
+}
+@media (max-width: 950px){
+    .photo{
+    
+    }
+    #gallery{
+        width: 95%;
+    }
+    .gallery-1 img{
+        width: 180px;
+    }
+    .gallery-1, gallery-2{
+        display: flex;
+    }
+    .btn button{
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .video-1 iframe{
+        width: 255px;
+        height: 168px;
+    }
+    .player{
+        width: 230px;
+        height: 290px;
+    }
+    .player .imgBx{
+        height: 60%;
+    }
+    .player audio{
+        
+    }
+    footer{
+        font-size: 12px;
+    }
+}
